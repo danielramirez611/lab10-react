@@ -1,0 +1,8 @@
+<div class="col-lg-3">
+    <h1 class="my-4">{{ titulo }}</h1>
+    <div class="list-group">
+        {% for categoria in categorias %}
+            <a href="?categoria={{ categoria.id }}" class="list-group-item">{{ categoria.nombre }}</a>
+        {% endfor %}
+    </div>
+  </div>

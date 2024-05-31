@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block content %}
+                
+    <!-- Page Content -->
+    <div class="justify-content-center align-self-center">
+      <div class="">
+        <!-- /.col-lg-3 -->
+        <div class="col-lg-9">
+          <div class="card mt-4">
+            <div class="p-2">
+              <img class="card-img-top img-fluid h-100 w-25" src="{{ producto.img_producto.url }}" alt="{{ producto.nombre }}">
+            </div>
+            <div class="p-2 card-body">
+              <h3 class="card-title">{{ producto.nombre }}</h3>
+              <h4>S/ {{ producto.precio}}</h4>    
+              <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+              4.0 stars
+            </div>
+          </div>
+          <!-- /.card -->
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              <p class="card-text"><strong>Categoría:</strong> {{ producto.categoria.nombre }}</p>
+            </div>
+            <div class="card-body">
+              <p>Todo consumo en exceso es dañido.</p>
+              <small class="text-muted">Lo más vendido</small>
+              <hr>
+              <a href="#" class="btn btn-success">Añadir a carrito</a>
+            </div>
+          </div>
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Todos los Derechos Reservados 2024</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+{% endblock %}
+    
